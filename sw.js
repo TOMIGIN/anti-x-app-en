@@ -1,4 +1,4 @@
-const CACHE_NAME = 'anti-x-en-cache-v1';
+const CACHE_NAME = 'anti-x-en-cache-v2';
 const ASSETS = [
   './',
   './index.html',
