@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>X</title>
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icon.png">
+  
+  <!-- Google Fonts: Outfit and Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@600;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- 1. Realistic Splash Screen (Same as X) -->
+    <div id="splash-screen" class="screen active">
+      <div class="x-logo-container">
+        <svg class="x-logo" viewBox="0 0 24 24" aria-hidden="true">
+          <g>
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- 2. Warning Screen (English) -->
+    <div id="warning-screen" class="screen">
+      <div class="warning-content">
+        <div class="warning-icon-wrapper">
+          <span class="warning-emoji">⚠️</span>
+        </div>
+        <h1 class="warning-title">Hey!</h1>
+        <p class="warning-text">
+          No more wasting time on<br>
+          <span class="highlight">X (Twitter)</span>!<br>
+          <span class="alert-accent">Stop that!</span>
+        </p>
+        <div class="timer-bar">
+          <div class="timer-progress"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Done/Zen Screen (English) -->
+    <div id="done-screen" class="screen">
+      <div class="done-content">
+        <div class="success-glow"></div>
+        <h2 class="done-title">Take a Deep Breath</h2>
+        <p class="done-message">Gently bring your focus back<br>to what's right in front of you. 🌟</p>
+        <button id="close-btn" class="action-btn">Back to Work</button>
+        <p class="hint-text">(Close this window or return to home)</p>
+      </div>
+    </div>
+
+    <!-- 4. Blackout Screen (Exit Helper) -->
+    <div id="blackout-screen" class="screen">
+      <div class="blackout-content">
+        <p>Close this tab and enjoy your day.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
